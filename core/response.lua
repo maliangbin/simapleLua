@@ -20,11 +20,11 @@ local switch = {
 }
 
 function _M:plain(text)
-    ngx.say(text)
+    ngx.print(text)
 end
 
 function _M:json(arr)
-    ngx.say(funs:json_encode(arr))
+    ngx.print(funs:json_encode(arr))
 end
 
 function _M:success(data)
